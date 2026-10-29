@@ -11,7 +11,7 @@ from email.mime.text import MIMEText
 from functools import wraps
 from typing import Any, cast
 
-from database import DB_ENGINE, db_query, initialize_database
+from backend.database import DB_ENGINE, db_query, initialize_database
 from dotenv import load_dotenv
 from flask import Flask, jsonify, request, send_from_directory, session
 from werkzeug.security import check_password_hash, generate_password_hash
